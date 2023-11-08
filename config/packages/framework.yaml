@@ -16,6 +16,14 @@ framework:
     php_errors:
         log: true
 
+    ide: vscode
+
+    serializer:
+        enabled: true
+        mapping:
+            paths:
+                - '%kernel.project_dir%/config/serializer'
+
 when@test:
     framework:
         test: true
